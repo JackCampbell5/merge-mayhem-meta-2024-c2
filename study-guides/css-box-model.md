@@ -1,13 +1,15 @@
 # CSS Box Model
 
-In order to style the element on a page, CSS uses rule sets that contain specific properties and their values to apply to the elements. Let's take a look at the syntax of a rule set and explore deeper into its meaning.
+In a document, or a website, each element is represented by a regular box. Each of the rectangular boxes has four edges: the margin edge, border edge, padding edge, and content edge. Let's take a look at the CSS Box Model.
 
-## CSS Syntax
+## Box Model Components
 
-![CSS Syntax](https://user-images.githubusercontent.com/6511/163082188-24304dfc-0ff0-468b-a6c0-330348d0765a.png)
+![Image of CSS box model](https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png)
 
-**Source**: [Anything.codes](http://anything.codes/gdi-intro-html-css/class2.html#/)
+Source: [Wikipedia](https://en.wikipedia.org/wiki/CSS_box_model)
 
-- `{}`: In CSS we use the curly brackets `{}` to define a rule set. All rules or declarations must be included inside the brackets.
-- Selector: A selector is used to identify the element the CSS rule will be applied to. In the example above, we use an element selector to apply rules to the entire body element. Basic selectors can select all elements, elements by type, class, and id, or by attribute.
-- Declaration: Each property and value pair is considered a declaration or rule.
+- `width`: This refers to the width of the content area of the element.
+- `height`: This refers to the height of the content area of the element.
+- `padding`: Directly surrounding the content area of the element is the padding. The **padding** can be divided into four different properties: `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`. Most web browsers give elements a default padding size of `0px`.
+- `border`: The **border** is the space between the padding and margin. Developers can modify the `border-color`, `border-style`, and `border-width` of an element. These properties can also be specified to its 4 different edges: `border-top`, `border-right`, `border-bottom`, and `border-left`. Most web browsers give elements a default border size of `0px`.
+- `margin`: The **margin** is the outermost space directly surrounding the border. The margin can be divided into four different properties: `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`. Most web browsers give elements a default margin size of `16px`.
